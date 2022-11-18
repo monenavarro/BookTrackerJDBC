@@ -24,7 +24,7 @@ public class BookDaoImpl implements BookDao {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BookLibrary", "root", "Basket4all");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BookLibrary", "root", "password");
 
             preparedStatement = connection.prepareStatement("SELECT * FROM BOOKINFORMATION");
 
@@ -75,7 +75,7 @@ public class BookDaoImpl implements BookDao {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BookLibrary", "root", "Basket4all");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/BookLibrary", "root", "password");
 
             preparedStatement = connection.prepareStatement("SELECT * FROM BOOKINFORMATION WHERE BOOK_ID=?");
 
